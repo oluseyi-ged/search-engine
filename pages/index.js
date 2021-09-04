@@ -3,10 +3,11 @@ import Image from "next/image"
 import Avatar from "../components/Avatar"
 import { MicrophoneIcon, ViewGridIcon } from "@heroicons/react/solid"
 import { SearchIcon } from "@heroicons/react/outline"
+import Footer from "../components/Footer"
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="flex flex-col items-center justify-center h-screen">
       <Head>
         <title>Google search engine clone build</title>
         <link rel="icon" href="/favicon.ico" />
@@ -30,7 +31,7 @@ export default function Home() {
       </header>
 
       {/* Body */}
-      <form className="flex flex-col items-center mt-44 flex-grow">
+      <form className="flex flex-col items-center mt-44 flex-grow w-4/5">
         <Image
           src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
           height={100}
@@ -49,6 +50,8 @@ export default function Home() {
       </form>
 
       {/* Footer */}
+
+      <Footer />
     </div>
   )
 }
