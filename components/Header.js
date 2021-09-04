@@ -3,6 +3,7 @@ import Image from "next/image"
 import { useRouter } from "next/router"
 import { useRef } from "react"
 import Avatar from "./Avatar"
+import HeaderOptions from "./HeaderOptions"
 
 function Header() {
   const router = useRouter()
@@ -48,6 +49,9 @@ function Header() {
           url="https://res.cloudinary.com/odd-developer/image/upload/v1627925104/P8iXlJ7x_400x400_f7xbus.jpg"
         />
       </div>
+
+      {/* Header Options */}
+      <HeaderOptions />
     </header>
   )
 }
